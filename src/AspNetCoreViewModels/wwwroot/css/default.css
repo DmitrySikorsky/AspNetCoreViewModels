@@ -1,0 +1,69 @@
+﻿/* Copyright © 2015 Dmitry Sikorsky. All rights reserved. */
+/* Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information. */
+body
+{
+  font: normal 15px Arial, sans-serif;
+  margin: 0;
+  padding: 50px;
+}
+
+.calendar {
+  border: 1px solid #000;
+}
+
+.calendar .header {
+  text-align: center;
+  padding: 10px;
+}
+
+.calendar table {
+  width: 100%;
+}
+
+.calendar table tr {
+}
+
+.calendar table tr th, .calendar table tr td {
+  font-weight: normal;
+  text-align: center;
+  vertical-align: top;
+  padding: 10px;
+  width: 14.25%;
+}
+
+.calendar table tr th {
+  background: #f0f0f0;
+}
+
+.calendar table tr td {
+  padding-top: 30px;
+  height: 50px;
+}
+
+.calendar table tr td .day {
+}
+
+.calendar table tr td .not-current-month {
+  color: #ccc !important;
+}
+
+.calendar table tr td .weekend-or-holiday {
+  color: #ff0000;
+}
+
+.calendar table tr td .today {
+  color: #00cc00 !important;
+}
+
+.calendar table tr td .day .date {
+  font-size: 20px;
+}
+
+.calendar table tr td .day .events {
+}
+
+.calendar table tr td .day .events .event {
+  color: #ff0000;
+  font-size: 10px;
+  margin-top: 5px;
+}

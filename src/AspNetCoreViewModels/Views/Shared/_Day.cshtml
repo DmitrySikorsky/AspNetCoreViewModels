@@ -1,0 +1,14 @@
+﻿@* Copyright © 2015 Dmitry Sikorsky. All rights reserved. *@
+@* Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information. *@
+@model AspNetCoreViewModels.ViewModels.Shared.DayViewModel
+<div class="day @(this.Model.IsNotCurrentMonth ? "not-current-month" : null) @(this.Model.IsWeekendOrHoliday ? "weekend-or-holiday" : null) @(this.Model.IsToday ? "today" : null)">
+  <div class="date">
+    @Model.Date.Day.ToString("00")
+  </div>
+  <div class="events">
+    @foreach (var @event in this.Model.Events)
+    {
+      @Html.Partial("_Event", @event)
+    }
+  </div>
+</div>
